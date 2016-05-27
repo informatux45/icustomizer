@@ -127,7 +127,7 @@ $generalTab->createOption( array(
 $generalTab->createOption( array(
 	'name' => __( 'New text', ICUSTOMIZER_ID_LANGUAGES ) . ' <br><i>( ' . __( 'authorized HTML', ICUSTOMIZER_ID_LANGUAGES ) . ' )</i>',
 	'id' => 'icustomizer_remove_footer_admin_txt',
-	'type' => 'text',
+	'type' => 'textarea',
 ) );
 $generalTab->createOption( array(
 	'name' => __( 'Remove Admin Footer WP Version (Right)', ICUSTOMIZER_ID_LANGUAGES ),
@@ -139,7 +139,7 @@ $generalTab->createOption( array(
 $generalTab->createOption( array(
 	'name' => __( 'New text', ICUSTOMIZER_ID_LANGUAGES ) . ' <br><i>( ' . __( 'authorized HTML', ICUSTOMIZER_ID_LANGUAGES ) . ' )</i>',
 	'id' => 'icustomizer_remove_footer_version_admin_txt',
-	'type' => 'text',
+	'type' => 'textarea',
 ) );
 
 
