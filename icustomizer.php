@@ -9,7 +9,7 @@
  *
  * @wordpress-plugin
  * Plugin Name: ICustomizer
- * Plugin URI:  http://informatux.com/index.php?category=wordpress
+ * Plugin URI:  http://informatux.com/category/WORDPRESS
  * Description: Sécurité du front et personnalisation de votre administration sous Wordpress.
  * Version:     1.0.0
  * Author:      INFORMATUX

@@ -23,7 +23,7 @@ $customjsTab->createOption( array(
 	'height' => '450',
 	'desc' => __(
 			'Put your custom JS rules here ', ICUSTOMIZER_ID_LANGUAGES )
-			. __( '<strong class="icustomizer-red">without the tag &lt;script&gt; and &lt;/script&gt;.</strong><br><br>Your code will be framed between this code:<br>jQuery(document).ready(function() { <span style="color: grey;"><strong class="icustomizer-green">YOUR CODE</strong></span> });<br><br>', ICUSTOMIZER_ID_LANGUAGES ) . 'Sample to use JQUERY:<br>jQuery(".yourclass").css({"color":"red"})',
+			. __( '<strong class="icustomizer-red">without the tag &lt;script&gt; and &lt;/script&gt;.</strong><br><br>Your code will be framed between this code:<br>jQuery(document).ready(function() { <span style="color: grey;"><strong class="icustomizer-green">YOUR CODE</strong></span> });<br><br>', ICUSTOMIZER_ID_LANGUAGES ) . __( 'Sample to use JQUERY:', ICUSTOMIZER_ID_LANGUAGES ) . '<br>jQuery(".yourclass").css({"color":"red"})',
 	'lang' => 'javascript',
 ) );
 

@@ -34,6 +34,10 @@
 .icustomizer-green {
 	color: green;
 }
+.icustomizer-credits {
+	float: left;
+	margin-right: 20px;
+}
 
 body.toplevel_page_icustomizer .titan-framework-panel-wrap .tf-heading th {
   background-color: lightgrey !important;

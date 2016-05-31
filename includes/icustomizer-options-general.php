@@ -17,8 +17,13 @@ $generalTab->createOption( array(
 				<div style="color:black; font-style: normal;">
 					<p>
 						<ol>
-							<li>' . __( '[ADMIN]: Footer / Dashboard / Login', ICUSTOMIZER_ID_LANGUAGES ) . '</li>
-							<li>' . __( '[FRONT]: Metas / Security', ICUSTOMIZER_ID_LANGUAGES ) . '</li>
+							<li>' . __( 'Manage your meta, settings, admin bar and footer', ICUSTOMIZER_ID_LANGUAGES ) . '</li>
+							<li>' . __( 'Customize your admin dashboard', ICUSTOMIZER_ID_LANGUAGES ) . '</li>
+							<li>' . __( 'Inject CSS code in your admin / in your website', ICUSTOMIZER_ID_LANGUAGES ) . '</li>
+							<li>' . __( 'Inject CSS Javascript / JQuery in your website', ICUSTOMIZER_ID_LANGUAGES ) . '</li>
+							<li>' . __( 'Customize the behavior of your editors', ICUSTOMIZER_ID_LANGUAGES ) . '</li>
+							<li>' . __( 'Customize your login page', ICUSTOMIZER_ID_LANGUAGES ) . '</li>
+							<li>' . __( 'Check security options', ICUSTOMIZER_ID_LANGUAGES ) . '</li>
 						</ol>
 					</p>
 					<p>
@@ -67,14 +72,14 @@ $generalTab->createOption( array(
     'id' => 'icustomizer_enable_all_settings',
     'type' => 'enable',
     'default' => false,
-    'desc' => 'Enable or disable All settings visibility for Admin Only - Default: Disabled',
+    'desc' => __( 'Enable or disable All settings visibility for Admin Only - Default: Disabled', ICUSTOMIZER_ID_LANGUAGES ),
 ) );
 $generalTab->createOption( array(
     'name' => __( 'Hide connection errors', ICUSTOMIZER_ID_LANGUAGES ),
     'id' => 'icustomizer_hide_connection_errors',
     'type' => 'enable',
     'default' => false,
-    'desc' => 'Hide Login Connection Errors - Default: Disabled',
+    'desc' => __( 'Hide Login Connection Errors - Default: Disabled', ICUSTOMIZER_ID_LANGUAGES ),
 ) );
 
 // ----------------------------------------
@@ -88,28 +93,28 @@ $generalTab->createOption( array(
     'id' => 'icustomizer_remove_wp_adminbar',
     'type' => 'enable',
     'default' => false,
-    'desc' => 'Enable or disable Logo WP - Default: Disabled',
+    'desc' => __( 'Enable or disable Logo WP - Default: Disabled', ICUSTOMIZER_ID_LANGUAGES ),
 ) );
 $generalTab->createOption( array(
     'name' => __( 'Remove Logo WP in Admin Bar', ICUSTOMIZER_ID_LANGUAGES ),
     'id' => 'icustomizer_remove_logo_wp_adminbar',
     'type' => 'enable',
     'default' => false,
-    'desc' => 'Enable or disable Logo WP - Default: Disabled',
+    'desc' => __( 'Enable or disable Logo WP - Default: Disabled', ICUSTOMIZER_ID_LANGUAGES ),
 ) );
 $generalTab->createOption( array(
     'name' => __( 'Remove Logo COMMENT in Admin Bar', ICUSTOMIZER_ID_LANGUAGES ),
     'id' => 'icustomizer_remove_comment_wp_adminbar',
     'type' => 'enable',
     'default' => false,
-    'desc' => 'Enable or disable COMMENT WP - Default: Disabled',
+    'desc' => __( 'Enable or disable COMMENT WP - Default: Disabled', ICUSTOMIZER_ID_LANGUAGES ),
 ) );
 $generalTab->createOption( array(
     'name' => __( 'Remove WP New Content in Admin Bar', ICUSTOMIZER_ID_LANGUAGES ),
     'id' => 'icustomizer_remove_new_content_wp_adminbar',
     'type' => 'enable',
     'default' => false,
-    'desc' => 'Enable or disable New Content WP - Default: Disabled',
+    'desc' => __( 'Enable or disable New Content WP - Default: Disabled', ICUSTOMIZER_ID_LANGUAGES ),
 ) );
 // ----------------------------------------
 // --- Admin FOOTER -----------------------
