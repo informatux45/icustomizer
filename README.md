@@ -1,4 +1,5 @@
 === ICustomizer ===
+
 Contributors: INFORMATUX
 Donate link: //informatux.com/
 Requires at least: 4.5.2
@@ -8,7 +9,7 @@ License: GPLv3
 
 Personnalisation de votre administration et de votre site web
 
-== Description ==
+==Description==
 
 Personnaliser votre administration :
 - Security WP
@@ -35,9 +36,9 @@ Personnaliser votre administration :
 
 * WordPress 4.5+ (not tested on above versions, but may works)
 
-** Useful Resources **
+**Useful Resources**
 
-- Find out what is the <a href="http://informatux.com/category/WORDPRESS" target="_blank">best WordPress hosting</a>.
+- Retrouvez nous sur notre site <a href="http://informatux.com/category/WORDPRESS" target="_blank">INFORMATUX.COM</a>.
 
 = Supported languages =
 * English [en_US]
@@ -46,6 +47,7 @@ Personnaliser votre administration :
 Devenez un traducteur et envoyez nous vos traductions !
 
 == Installation ==
+
 1. Télécharger et activer le plugin (ou installer le depuis la console admin de [WordPress](http://wordpress.org/ "Your favorite software"))
 2. Cliquer sur le menu "ICustomizer"
 3. Laissez vous guider pour les options ;)	
