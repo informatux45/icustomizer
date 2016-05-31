@@ -6,11 +6,11 @@ Tested up to: 4.5.2
 Stable tag: 1.0.0
 License: GPLv3
 
-Customisation de l\'administration
+Personnalisation de votre administration et de votre site web
 
 == Description ==
 
-Customize administration :
+Personnaliser votre administration :
 - Security WP
 - Dashboard Admin
 - Footer Admin
@@ -21,21 +21,13 @@ Customize administration :
 
 = Plugin Capabilities =
 
-*
-* 
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-
+* Gérez vos métas, paramètres, bar d'admin et pied de page
+* Personnaliser votre tableau de bord Admin
+* Injecter du CSS dans votre administration / dans votre site web
+* Injecter du CSS et du Javascript dans votre site web
+* Personnaliser le comportement de vos éditeurs
+* Personnaliser votre page de login
+* Vérifiez les options de sécurité
 
 **Please ask for help or report bugs if anything goes wrong. It is the best way to make the community benefit!**
 
@@ -45,20 +37,18 @@ Customize administration :
 
 ** Useful Resources **
 
-- Check-out our <a href="http://docs.themeisle.com" rel="friend" target="_blank">tutorials site</a>
-- Take a look at our other <a href="http://themeisle.com/wordpress-plugins/" rel="friend" target="_blank">plugins</a>.
-- Find out what is the <a href="http://www.codeinwp.com/blog/" rel="friend" target="_blank">best WordPress hosting</a> (real research ).
+- Find out what is the <a href="http://informatux.com/category/WORDPRESS" target="_blank">best WordPress hosting</a>.
 
 = Supported languages =
 * English [en_US]
 * French [fr_FR]
 
-Become a translator and send us your translation!
+Devenez un traducteur et envoyez nous vos traductions !
 
 == Installation ==
-1. Upload and activate the plugin (or install it through the WP admin console)
-2. Click on the "ICustomizer" menu
-3. Follow instructions, every option is documented ;)	
+1. Télécharger et activer le plugin (ou installer le depuis la console admin de Wordpress)
+2. Cliquer sur le menu "ICustomizer"
+3. Laissez vous guider pour les options ;)	
 
 == Changelog ==
 
