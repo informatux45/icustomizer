@@ -1,58 +1,48 @@
-=== ICustomizer ===
 
+
+=== ICustomizer ===
 Contributors: INFORMATUX
-Donate link: //informatux.com/
+Tags: Admin, Dashboard, Custom CSS, Custom JS, Metas, Editor, Security
+Donate link: http://informatux.com
 Requires at least: 4.5.2
 Tested up to: 4.5.2
 Stable tag: 1.0.0
 License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.fr.html
 
 Personnalisation de votre administration et de votre site web
 
 == Description ==
+Plugins de personnalisation de votre administration et de votre site web.
 
-Personnaliser votre administration :
-- Security WP
-- Dashboard Admin
-- Footer Admin
-- Options Meta
-- Custom CSS / JS (Admin / Front)
-- Editor Behavior
-- Htaccess
+1. Gérez vos métas, paramètres, bar d\'admin et pied de page
+1. Personnaliser votre tableau de bord Admin
+1. Injecter du CSS dans votre administration / dans votre site web
+1. Injecter du CSS et du Javascript dans votre site web
+1. Personnaliser le comportement de vos éditeurs
+1. Personnaliser votre page de login
+1. Vérifiez les options de sécurité
 
-= Plugin Capabilities =
-
-* Gérez vos métas, paramètres, bar d'admin et pied de page
-* Personnaliser votre tableau de bord Admin
-* Injecter du CSS dans votre administration / dans votre site web
-* Injecter du CSS et du Javascript dans votre site web
-* Personnaliser le comportement de vos éditeurs
-* Personnaliser votre page de login
-* Vérifiez les options de sécurité
-
-**Please ask for help or report bugs if anything goes wrong. It is the best way to make the community benefit!**
-
-= WordPress requirement =
-
-* WordPress 4.5+ (not tested on above versions, but may works)
-
-**Useful Resources**
-
-- Retrouvez nous sur notre site <a href="http://informatux.com/category/WORDPRESS" target="_blank">INFORMATUX.COM</a>.
-
-= Supported languages =
-* English [en_US]
-* French [fr_FR]
-
-Devenez un traducteur et envoyez nous vos traductions !
+[INFORMATUX](http://informatux.com/) / [Documentation](http://informatux.com/category/WORDPRESS).
 
 == Installation ==
-
-1. Télécharger et activer le plugin (ou installer le depuis la console admin de [WordPress](http://wordpress.org/ "Your favorite software"))
-2. Cliquer sur le menu "ICustomizer"
+1. Télécharger et activer le plugin (ou installer le depuis la console admin de [WordPress](http://wordpress.org/)
+2. Cliquer sur le menu \"ICustomizer\"
 3. Laissez vous guider pour les options ;)	
 
-== Changelog ==
+== Frequently Asked Questions ==
+= Pourquoi ? =
+Pourquoi pas ;-)
 
+== Screenshots ==
+1. icustomizer general options
+2. icustomizer custom css
+3. icustomizer wp editor
+
+== Changelog ==
 = 1.0.0 =
 * First stable version.
+
+== Upgrade Notice ==
+Pensez à mettre à jour votre plugin... question de sécurité ;-)
+
