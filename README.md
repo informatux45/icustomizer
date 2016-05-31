@@ -1,5 +1,5 @@
 # ICustomizer
-- Contributors: INFORMATUX
+- Contributors: [INFORMATUX](http://informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
 - Requires at least: 4.5.2
 - Tested up to: 4.5.2
 - Stable tag: 1.0.0
