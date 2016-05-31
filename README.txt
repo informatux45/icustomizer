@@ -46,7 +46,7 @@ Personnaliser votre administration :
 Devenez un traducteur et envoyez nous vos traductions !
 
 == Installation ==
-1. Télécharger et activer le plugin (ou installer le depuis la console admin de Wordpress)
+1. Télécharger et activer le plugin (ou installer le depuis la console admin de [WordPress](http://wordpress.org/ "Your favorite software"))
 2. Cliquer sur le menu "ICustomizer"
 3. Laissez vous guider pour les options ;)	
 
