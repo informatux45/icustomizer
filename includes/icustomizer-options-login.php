@@ -128,7 +128,7 @@ if (!function_exists('icustomizer_custom_login_styles')) {
 		$icustomizer_background_id = $icustomizer_option->getOption( 'icustomizer_login_background' );
 		if (is_numeric($icustomizer_background_id)) {
 			$icustomizer_background_src = wp_get_attachment_url( $icustomizer_background_id );
-			wp_add_inline_style( 'icustomizer-login-style', 'body {background:url("' . esc_url( $icustomizer_background_src ) . '") no-repeat center center fixed;
+			wp_add_inline_style( 'icustomizer-login-style', 'body {background:url("' . esc_url( $icustomizer_background_src ) . '") no-repeat center center fixed !important;
 															 background-size: cover;}' );
 		}
 
