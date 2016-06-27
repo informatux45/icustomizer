@@ -72,7 +72,7 @@ function icustomizer_plugin_row_meta( $links, $file ) {
 	if (strpos($file, ICUSTOMIZER_BASE) !== false) {
 		$new_links = array(
 			'donate' => '<a href="//informatux.com/donate" target="_blank"><span class="dashicons dashicons-star-filled"></span>Donate</a>',
-			'doc' => '<a href="//informatux.com/index.php?category=wordpress" target="_blank"><span class="dashicons dashicons-book-alt"></span>Documentation</a>'
+			'doc' => '<a href="//informatux.com/category/WORDPRESS" target="_blank"><span class="dashicons dashicons-book-alt"></span>Documentation</a>'
 		);
 		
 		$links = array_merge($links, $new_links);
