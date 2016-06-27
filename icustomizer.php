@@ -50,7 +50,13 @@ add_action( 'plugins_loaded', 'icustomizer_translate_load_textdomain', 1 );
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // Load plugin files                     -=
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-require_once(ICUSTOMIZER_PATH . 'lib/titan-framework/titan-framework-embedder.php');
+if ( ! function_exists( 'is_plugin_active' ) ) include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+$titan_check_framework_install = 'titan-framework/titan-framework.php';
+if (is_plugin_active($titan_check_framework_install)) {
+	require_once(ABSPATH . 'wp-content/plugins/titan-framework/titan-framework-embedder.php');
+} else {
+	require_once(ICUSTOMIZER_PATH . 'lib/titan-framework/titan-framework-embedder.php');
+}
 
 $icustomizerFiles = array('interface', 'style', 'functions');
 foreach ($icustomizerFiles as $icustomizerFile) {
@@ -83,27 +89,27 @@ add_filter( 'plugin_row_meta', 'icustomizer_plugin_row_meta', 10, 2 );
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 if ( ! function_exists( 'get_plugin_data' ) ) {
 	require_once ABSPATH . 'wp-admin/includes/plugin.php';
-	function icustomizer_get_version( $icustomizer_infos = 'Version' ) {
+}
+function icustomizer_get_version( $icustomizer_infos = 'Version' ) {
 
-		/* *************************************************************************************
-		 *
-		 * 'Name' - Name of the plugin, must be unique.
-		 * 'Title' - Title of the plugin and the link to the plugin's web site.
-		 * 'Description' - Description of what the plugin does and/or notes from the author.
-		 * 'Author' - The author's name
-		 * 'AuthorURI' - The authors web site address.
-		 * 'Version' - The plugin version number.
-		 * 'PluginURI' - Plugin web site address.
-		 * 'TextDomain' - Plugin's text domain for localization.
-		 * 'DomainPath' - Plugin's relative directory path to .mo files.
-		 * 'Network' - Boolean. Whether the plugin can only be activated network wide.
-		 *
-		 * ********************************************************************************** */
+	/* *************************************************************************************
+	 *
+	 * 'Name' - Name of the plugin, must be unique.
+	 * 'Title' - Title of the plugin and the link to the plugin's web site.
+	 * 'Description' - Description of what the plugin does and/or notes from the author.
+	 * 'Author' - The author's name
+	 * 'AuthorURI' - The authors web site address.
+	 * 'Version' - The plugin version number.
+	 * 'PluginURI' - Plugin web site address.
+	 * 'TextDomain' - Plugin's text domain for localization.
+	 * 'DomainPath' - Plugin's relative directory path to .mo files.
+	 * 'Network' - Boolean. Whether the plugin can only be activated network wide.
+	 *
+	 * ********************************************************************************** */
 
-		$plugin_data = get_plugin_data( __FILE__ );
-		$plugin_version = $plugin_data[ "$icustomizer_infos" ];
-		return $plugin_version;
-	}
+	$plugin_data = get_plugin_data( __FILE__ );
+	$plugin_version = $plugin_data[ "$icustomizer_infos" ];
+	return $plugin_version;
 }
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
