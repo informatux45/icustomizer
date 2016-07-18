@@ -53,7 +53,7 @@ add_action( 'plugins_loaded', 'icustomizer_translate_load_textdomain', 1 );
 if ( ! function_exists( 'is_plugin_active' ) ) include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 $titan_check_framework_install = 'titan-framework/titan-framework.php';
 if (is_plugin_active($titan_check_framework_install)) {
-	require_once(ABSPATH . 'wp-content/plugins/titan-framework/titan-framework-embedder.php');
+	require_once(WP_CONTENT_DIR . '/plugins/titan-framework/titan-framework-embedder.php');
 } else {
 	require_once(ICUSTOMIZER_PATH . 'lib/titan-framework/titan-framework-embedder.php');
 }

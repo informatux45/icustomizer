@@ -113,7 +113,7 @@ function my_plugin_menu() {
 }
 // Ajout du lien vers la feuille de style personnalisée
 function myplugin_styles() {
-  echo '<link href="/wp-content/plugins/icustomizer/css/style.css" rel="stylesheet" media="all" type="text/css" />';
+  echo '<link href="' . WP_CONTENT_URL . '/plugins/icustomizer/css/style.css" rel="stylesheet" media="all" type="text/css" />';
 }
 // affichage de la page Réglages / Settings
 function my_settings_callback(){

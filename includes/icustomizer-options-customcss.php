@@ -61,7 +61,7 @@ function icustomizer_custom_front_styles() {
 	wp_dequeue_style('tf-compiled-options-icustomizer-css');
 	wp_deregister_style('tf-compiled-options-icustomizer-css');
 	// --- Remove file from Uploads
-	$tf_compiled_options_icustomizer_css = ABSPATH . 'wp-content/uploads/titan-framework-' . ICUSTOMIZER_ID . '-css.css';
+	$tf_compiled_options_icustomizer_css = WP_CONTENT_DIR . '/uploads/titan-framework-' . ICUSTOMIZER_ID . '-css.css';
 	if (file_exists($tf_compiled_options_icustomizer_css))
 		unlink( $tf_compiled_options_icustomizer_css );
 }
