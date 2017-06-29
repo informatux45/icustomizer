@@ -51,6 +51,19 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
 // for site options in Multisite
 // -----------------------------
 //delete_site_option($option_name);
+//if (is_multisite()) {
+//    global $wpdb;
+//    $blogs = $wpdb->get_results("SELECT blog_id FROM {$wpdb->blogs}", ARRAY_A);
+//
+//    if(!empty($blogs)) {
+//        foreach($blogs as $blog) {
+//	    switch_to_blog($blog['blog_id']);
+//            delete_option('option_name');
+//        }
+//    }
+//} else {
+//    delete_option('option_name');
+//}
 // -----------------------------
 
 // ----------------------------
