@@ -13,7 +13,7 @@ defined('ABSPATH') or die('Are you crazy!');
 // ----------------------------------------
 $generalTab->createOption( array(
 	'name' => '<div class="icustomizer-icons icon-icustomizer icustomizer-icons-200"></div>',
-	'desc' => '<h3 class="">' . __( 'Welcome to ICustomizer', ICUSTOMIZER_ID_LANGUAGES ) . ' v.' . icustomizer_get_version( 'Version' ) . ' by <a href="' . icustomizer_get_version( 'AuthorURI' ) . '" target="_blank">' . icustomizer_get_version( 'Author' ) .  '</a></h3>
+	'desc' => '<h3 class="">' . __( 'Welcome to ICustomizer', ICUSTOMIZER_ID_LANGUAGES ) . ' v.' . icustomizer_get_version( 'Version' ) . ' ' . __( 'by', ICUSTOMIZER_ID_LANGUAGES ) .' <a href="' . icustomizer_get_version( 'AuthorURI' ) . '" target="_blank">' . icustomizer_get_version( 'Author' ) .  '</a></h3>
 				<div style="color:black; font-style: normal;">
 					<p>
 						<ol>

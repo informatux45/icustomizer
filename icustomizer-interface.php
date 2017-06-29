@@ -33,35 +33,45 @@ function icustomizer_create_options() {
     // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     $generalTab = $icustomizer_panel->createTab( array(
         'name' => __( 'General Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'general',
             ) );
     $dashboardTab = $icustomizer_panel->createTab( array(
         'name' => __( 'Dashboard Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'dashboard',
             ) );
     $customcssTab = $icustomizer_panel->createTab( array(
         'name' => __( 'Custom CSS Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'customcss',
             ) );
     $customjsTab = $icustomizer_panel->createTab( array(
         'name' => __( 'Custom JS Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'customjs',
             ) );
     $editorTab = $icustomizer_panel->createTab( array(
         'name' => __( 'Editor Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'editor',
             ) );
     $loginTab = $icustomizer_panel->createTab( array(
         'name' => __( 'Login Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'login',
             ) );
     $securityTab = $icustomizer_panel->createTab( array(
         'name' => __( 'Security Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'security',
             ) );
     $creditsTab = $icustomizer_panel->createTab( array(
         'name' => __( 'Credits', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'credits',
             ) );
 			
 	// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	// Create tab's options                  -=
 	// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-	$icustomizerOptions = array('general', 'dashboard', 'login', 'customcss', 'customjs', 'editor', 'security', 'credits');
+	$icustomizerOptions = ['general', 'dashboard', 'login', 'customcss', 'customjs', 'editor', 'security', 'credits'];
 	foreach ($icustomizerOptions as $icustomizerOption) {
-		require_once(ICUSTOMIZER_PATH . 'includes/' . ICUSTOMIZER_ID . '-options-' . $icustomizerOption . '.php');
+		$icustomizerOptionFile = ICUSTOMIZER_PATH . 'includes/' . ICUSTOMIZER_ID . '-options-' . $icustomizerOption . '.php';
+		if (file_exists($icustomizerOptionFile))
+			require_once($icustomizerOptionFile);
 	}
 
     // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

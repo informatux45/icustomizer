@@ -4,17 +4,17 @@
  *
  * @package     ICustomizer
  * @author      INFORMATUX
- * @copyright   2016 INFORMATUX
+ * @copyright   2017 INFORMATUX
  * @license     GPL-3.0+
  *
  * @wordpress-plugin
  * Plugin Name: ICustomizer
  * Plugin URI:  http://informatux.com/category/WORDPRESS
  * Description: Sécurité du front et personnalisation de votre administration sous Wordpress.
- * Version:     1.0.0
+ * Version:     1.1
  * Author:      INFORMATUX
- * Author URI:  http://informatux.com
- * Text Domain: plugin-name
+ * Author URI:  https://informatux.com
+ * Text Domain: icustomizer
  * License:     GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  */
@@ -40,9 +40,11 @@ defined('ICUSTOMIZER_COOKIE') or define('ICUSTOMIZER_COOKIE', 'icustomizerCookie
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // Load plugin translations              -=
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-function icustomizer_translate_load_textdomain() {
-    $path = basename( dirname( __FILE__ ) ) . '/languages/';
-    load_plugin_textdomain( ICUSTOMIZER_ID_LANGUAGES, false, $path );
+if ( ! function_exists( 'icustomizer_translate_load_textdomain' ) ) {
+	function icustomizer_translate_load_textdomain() {
+		$path = basename( dirname( __FILE__ ) ) . '/languages/';
+		load_plugin_textdomain( ICUSTOMIZER_ID_LANGUAGES, false, $path );
+	}
 }
 add_action( 'plugins_loaded', 'icustomizer_translate_load_textdomain', 1 );
 
@@ -60,7 +62,9 @@ if (is_plugin_active($titan_check_framework_install)) {
 
 $icustomizerFiles = array('interface', 'style', 'functions');
 foreach ($icustomizerFiles as $icustomizerFile) {
-    require_once(ICUSTOMIZER_PATH . ICUSTOMIZER_ID . '-' . $icustomizerFile . '.php');
+	$icustomizerFileExist = ICUSTOMIZER_PATH . ICUSTOMIZER_ID . '-' . $icustomizerFile . '.php';
+	if (file_exists($icustomizerFileExist))
+		require_once($icustomizerFileExist);
 }
 
 
@@ -68,17 +72,19 @@ foreach ($icustomizerFiles as $icustomizerFile) {
 //        ICustomizer Meta links         -=
 //            in plugins page            -=
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-function icustomizer_plugin_row_meta( $links, $file ) {
-	if (strpos($file, ICUSTOMIZER_BASE) !== false) {
-		$new_links = array(
-			'donate' => '<a href="//informatux.com/donate" target="_blank"><span class="dashicons dashicons-star-filled"></span>Donate</a>',
-			'doc' => '<a href="//informatux.com/category/WORDPRESS" target="_blank"><span class="dashicons dashicons-book-alt"></span>Documentation</a>'
-		);
+if ( ! function_exists('icustomizer_plugin_row_meta') ) {
+	function icustomizer_plugin_row_meta( $links, $file ) {
+		if (strpos($file, ICUSTOMIZER_BASE) !== false) {
+			$new_links = array(
+				'donate' => '<a href="//informatux.com/donate" target="_blank"><span class="dashicons dashicons-star-filled"></span>Donate</a>',
+				'doc' => '<a href="//informatux.com/category/WORDPRESS" target="_blank"><span class="dashicons dashicons-book-alt"></span>Documentation</a>'
+			);
+			
+			$links = array_merge($links, $new_links);
+		}
 		
-		$links = array_merge($links, $new_links);
+		return $links;
 	}
-	
-	return $links;
 }
 add_filter( 'plugin_row_meta', 'icustomizer_plugin_row_meta', 10, 2 );
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -90,26 +96,28 @@ add_filter( 'plugin_row_meta', 'icustomizer_plugin_row_meta', 10, 2 );
 if ( ! function_exists( 'get_plugin_data' ) ) {
 	require_once ABSPATH . 'wp-admin/includes/plugin.php';
 }
-function icustomizer_get_version( $icustomizer_infos = 'Version' ) {
-
-	/* *************************************************************************************
-	 *
-	 * 'Name' - Name of the plugin, must be unique.
-	 * 'Title' - Title of the plugin and the link to the plugin's web site.
-	 * 'Description' - Description of what the plugin does and/or notes from the author.
-	 * 'Author' - The author's name
-	 * 'AuthorURI' - The authors web site address.
-	 * 'Version' - The plugin version number.
-	 * 'PluginURI' - Plugin web site address.
-	 * 'TextDomain' - Plugin's text domain for localization.
-	 * 'DomainPath' - Plugin's relative directory path to .mo files.
-	 * 'Network' - Boolean. Whether the plugin can only be activated network wide.
-	 *
-	 * ********************************************************************************** */
-
-	$plugin_data = get_plugin_data( __FILE__ );
-	$plugin_version = $plugin_data[ "$icustomizer_infos" ];
-	return $plugin_version;
+if ( ! function_exists('icustomizer_get_version') ) {
+	function icustomizer_get_version( $icustomizer_infos = 'Version' ) {
+	
+		/* *************************************************************************************
+		 *
+		 * 'Name' - Name of the plugin, must be unique.
+		 * 'Title' - Title of the plugin and the link to the plugin's web site.
+		 * 'Description' - Description of what the plugin does and/or notes from the author.
+		 * 'Author' - The author's name
+		 * 'AuthorURI' - The authors web site address.
+		 * 'Version' - The plugin version number.
+		 * 'PluginURI' - Plugin web site address.
+		 * 'TextDomain' - Plugin's text domain for localization.
+		 * 'DomainPath' - Plugin's relative directory path to .mo files.
+		 * 'Network' - Boolean. Whether the plugin can only be activated network wide.
+		 *
+		 * ********************************************************************************** */
+	
+		$plugin_data = get_plugin_data( __FILE__ );
+		$plugin_version = $plugin_data[ "$icustomizer_infos" ];
+		return $plugin_version;
+	}
 }
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
