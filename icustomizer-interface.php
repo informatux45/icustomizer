@@ -25,9 +25,36 @@ function icustomizer_create_options() {
         'id' => ICUSTOMIZER_ID,
 		'capability' => 'manage_options',
 		'desc' => '',
-            ) );
-
-
+    ) );
+	$icustomizer_subpanel = $icustomizer_panel->createAdminPanel( array(
+		'name' => __( 'Dashboard Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'icustomizer&tab=dashboard',
+	) );
+	$icustomizer_subpanel = $icustomizer_panel->createAdminPanel( array(
+		'name' => __( 'Custom CSS Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'icustomizer&tab=customcss',
+	) );
+	$icustomizer_subpanel = $icustomizer_panel->createAdminPanel( array(
+		'name' => __( 'Custom JS Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'icustomizer&tab=customjs',
+	) );
+	$icustomizer_subpanel = $icustomizer_panel->createAdminPanel( array(
+		'name' => __( 'Editor Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'icustomizer&tab=editor',
+	) );
+	$icustomizer_subpanel = $icustomizer_panel->createAdminPanel( array(
+		'name' => __( 'Login Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'icustomizer&tab=login',
+	) );
+	$icustomizer_subpanel = $icustomizer_panel->createAdminPanel( array(
+		'name' => __( 'Security Options', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'icustomizer&tab=security',
+	) );
+	$icustomizer_subpanel = $icustomizer_panel->createAdminPanel( array(
+		'name' => __( 'Credits', ICUSTOMIZER_ID_LANGUAGES ),
+		'id' => 'icustomizer&tab=credits',
+	) );
+	
     // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     // Create option panel tabs              -=
     // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
