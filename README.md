@@ -54,5 +54,6 @@ Devenez un traducteur et envoyez nous vos traductions !
 - Update link id tabs.
 - Update language translation
 - Check if functions exist (main file)
+
 **1.0.0**
 - First stable version.
