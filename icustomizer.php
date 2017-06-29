@@ -76,9 +76,9 @@ if ( ! function_exists('icustomizer_plugin_row_meta') ) {
 	function icustomizer_plugin_row_meta( $links, $file ) {
 		if (strpos($file, ICUSTOMIZER_BASE) !== false) {
 			$new_links = array(
-                'donate' => '<a href="https://paypal.me/informatux/25" target="_blank"><span class="dashicons dashicons-star-filled"></span>Donate</a>',
-                'doc' => '<a href="https://informatux.com/category/WORDPRESS" target="_blank"><span class="dashicons dashicons-book-alt"></span>Documentation</a>',
-                'cv' => '<a href="https://cv.informatux.com/" target="_blank"><span class="dashicons dashicons-media-text"></span>About me</a>'
+                'donate' => '<a href="https://paypal.me/informatux/25" target="_blank"><span class="dashicons dashicons-star-filled"></span>' . __( 'Donate', ICUSTOMIZER_ID_LANGUAGES ) . '</a>',
+                'doc' => '<a href="https://informatux.com/category/WORDPRESS" target="_blank"><span class="dashicons dashicons-book-alt"></span>' . __( 'Documentation', ICUSTOMIZER_ID_LANGUAGES ) . '</a>',
+                'cv' => '<a href="https://cv.informatux.com/" target="_blank"><span class="dashicons dashicons-id-alt"></span>' . __( 'About', ICUSTOMIZER_ID_LANGUAGES ) . '</a>'
 			);
 			
 			$links = array_merge($links, $new_links);

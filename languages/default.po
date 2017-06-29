@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ICustomizer\n"
-"POT-Creation-Date: 2017-06-29 14:10+0200\n"
-"PO-Revision-Date: 2017-06-29 14:10+0200\n"
+"POT-Creation-Date: 2017-06-29 17:34+0200\n"
+"PO-Revision-Date: 2017-06-29 17:35+0200\n"
 "Last-Translator: \n"
 "Language-Team: INFORMATUX <informatux45@gmail.com>\n"
 "Language: fr\n"
@@ -15,51 +15,63 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: icustomizer-interface.php:35
-msgid "General Options"
-msgstr "Général"
-
-#: icustomizer-interface.php:39
+#: icustomizer-interface.php:30 icustomizer-interface.php:66
 msgid "Dashboard Options"
 msgstr "Tableau de bord"
 
-#: icustomizer-interface.php:43
+#: icustomizer-interface.php:34 icustomizer-interface.php:70
 msgid "Custom CSS Options"
 msgstr "CSS personnalisée(s)"
 
-#: icustomizer-interface.php:47
+#: icustomizer-interface.php:38 icustomizer-interface.php:74
 msgid "Custom JS Options"
 msgstr "Javascript personnalisé"
 
-#: icustomizer-interface.php:51
+#: icustomizer-interface.php:42 icustomizer-interface.php:78
 msgid "Editor Options"
 msgstr "Editeur WP"
 
-#: icustomizer-interface.php:55
+#: icustomizer-interface.php:46 icustomizer-interface.php:82
 msgid "Login Options"
 msgstr "Login"
 
-#: icustomizer-interface.php:59
+#: icustomizer-interface.php:50 icustomizer-interface.php:86
 msgid "Security Options"
 msgstr "Sécurité"
 
-#: icustomizer-interface.php:63
+#: icustomizer-interface.php:54 icustomizer-interface.php:90
 msgid "Credits"
 msgstr "Crédits"
 
-#: icustomizer-interface.php:82 icustomizer-interface.php:88
-#: icustomizer-interface.php:94 icustomizer-interface.php:100
-#: icustomizer-interface.php:106 icustomizer-interface.php:112
+#: icustomizer-interface.php:62
+msgid "General Options"
+msgstr "Général"
+
+#: icustomizer-interface.php:109 icustomizer-interface.php:115
+#: icustomizer-interface.php:121 icustomizer-interface.php:127
+#: icustomizer-interface.php:133 icustomizer-interface.php:139
 #: lib/titan-framework/lib/class-option-save.php:21
 msgid "Save Changes"
 msgstr "Sauvegarder"
 
-#: icustomizer-interface.php:83 icustomizer-interface.php:89
-#: icustomizer-interface.php:95 icustomizer-interface.php:101
-#: icustomizer-interface.php:107 icustomizer-interface.php:113
+#: icustomizer-interface.php:110 icustomizer-interface.php:116
+#: icustomizer-interface.php:122 icustomizer-interface.php:128
+#: icustomizer-interface.php:134 icustomizer-interface.php:140
 #: lib/titan-framework/lib/class-option-save.php:24
 msgid "Reset to Defaults"
 msgstr "Paramètres par défaut"
+
+#: icustomizer.php:79
+msgid "Donate"
+msgstr "Encouragement"
+
+#: icustomizer.php:80 lib/titan-framework/titan-framework.php:173
+msgid "Documentation"
+msgstr "Documentation"
+
+#: icustomizer.php:81
+msgid "About"
+msgstr "A propos"
 
 #: includes/icustomizer-options-credits.php:15
 msgid "CREDITS"
@@ -750,10 +762,6 @@ msgstr ""
 #: lib/titan-framework/titan-framework-checker.php:85
 msgid "Click here to go to the plugins page and activate it."
 msgstr ""
-
-#: lib/titan-framework/titan-framework.php:173
-msgid "Documentation"
-msgstr "Documentation"
 
 #: lib/titan-framework/titan-framework.php:177
 msgid "GitHub Repo"
