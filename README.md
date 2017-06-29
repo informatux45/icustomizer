@@ -1,7 +1,7 @@
 # ICustomizer
-- Contributors: [INFORMATUX](http://informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
-- Requires at least: 4.5.2
-- Tested up to: 4.5.2
+- Contributors: [INFORMATUX](https://informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
+- Requires at least: 4.7
+- Tested up to: 4.7.1
 - Stable tag: 1.0.0
 - License: [GPLv3](http://www.gnu.org/licenses/gpl-3.0.fr.html "Licence publique générale GNU v3")
 
@@ -31,10 +31,10 @@ __Plugin Capabilities__
 **Demandez nous pour signaler des bugs. C'est un bon moyen de faire progresser le plugin et d'en faire profiter la communauté !**
 
 ### WordPress requirement
-* WordPress 4.5+ (not tested on above versions, but may works)
+* WordPress 4.7+ (not tested on above versions, but may works)
 
 **Useful Resources**
-- Retrouvez nous sur notre site [INFORMATUX.COM](http://informatux.com/category/WORDPRESS).
+- Retrouvez nous sur notre site [INFORMATUX.COM](https://informatux.com/category/WORDPRESS).
 
 **Supported languages**
 * English [en_US]
@@ -50,5 +50,9 @@ Devenez un traducteur et envoyez nous vos traductions !
 
 ### Changelog
 
+**1.1**
+- Update link id tabs.
+- Update language translation
+- Check if functions exist (main file)
 **1.0.0**
 - First stable version.

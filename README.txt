@@ -4,9 +4,9 @@
 Contributors: INFORMATUX
 Tags: Admin, Dashboard, Custom CSS, Custom JS, Metas, Editor, Security
 Donate link: http://informatux.com
-Requires at least: 4.5.2
-Tested up to: 4.5.2
-Stable tag: 1.0.0
+Requires at least: 4.7
+Tested up to: 4.7.1
+Stable tag: 1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.fr.html
 
@@ -23,7 +23,7 @@ Plugins de personnalisation de votre administration et de votre site web.
 1. Personnaliser votre page de login
 1. Vérifiez les options de sécurité
 
-[INFORMATUX](http://informatux.com/) / [Documentation](http://informatux.com/category/WORDPRESS).
+[INFORMATUX](https://informatux.com/) / [Documentation](https://informatux.com/category/WORDPRESS).
 
 == Installation ==
 1. Télécharger et activer le plugin (ou installer le depuis la console admin de [WordPress](http://wordpress.org/)
@@ -40,6 +40,10 @@ Pourquoi pas ;-)
 3. icustomizer wp editor
 
 == Changelog ==
+= 1.1 =
+* Update link id tabs.
+* Update language translation
+* Check if functions exist (main file)
 = 1.0.0 =
 * First stable version.
 
