@@ -36,8 +36,13 @@ Pourquoi pas ;-)
 
 == Screenshots ==
 1. icustomizer general options
-2. icustomizer custom css
-3. icustomizer wp editor
+2. icustomizer dashboard admin WP
+3. icustomizer custom css admin / front
+4. icustomizer custom js admin / front
+5. icustomizer wp editor behaviors
+6. icustomizer wp admin login
+7. icustomizer security
+8. icustomizer credits
 
 == Changelog ==
 = 1.1 =
