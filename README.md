@@ -2,7 +2,7 @@
 - Contributors: [INFORMATUX](https://informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
 - Requires at least: 4.7
 - Tested up to: 4.7.1
-- Stable tag: 1.0.0
+- Stable tag: 1.1
 - License: [GPLv3](http://www.gnu.org/licenses/gpl-3.0.fr.html "Licence publique générale GNU v3")
 
 ###### Personnalisation de votre administration et de votre site web
@@ -35,6 +35,7 @@ __Plugin Capabilities__
 
 **Useful Resources**
 - Retrouvez nous sur notre site [INFORMATUX.COM](https://informatux.com/category/WORDPRESS).
+- Retrouvez la page officielle de ICUSTOMIZER sur [WordPress](https://fr.wordpress.org/plugins/icustomizer/)
 
 **Supported languages**
 * English [en_US]
@@ -44,9 +45,9 @@ Devenez un traducteur et envoyez nous vos traductions !
 
 #### Installation
 
-1. Télécharger et activer le plugin (ou installer le depuis la console admin de [WordPress](http://wordpress.org/)
+1. Télécharger et activer le plugin ou installer le depuis les extensions de votre admininstration de [WordPress](https://fr.wordpress.org/plugins/icustomizer/)
 2. Cliquer sur le menu "ICustomizer"
-3. Laissez vous guider pour les options ;)	
+3. Laissez vous guider par les options ;)	
 
 ### Changelog
 
