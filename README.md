@@ -45,7 +45,7 @@ Devenez un traducteur et envoyez nous vos traductions !
 
 #### Installation
 
-1. Télécharger et activer le plugin ou installer le depuis les extensions de votre admininstration de [WordPress](https://fr.wordpress.org/plugins/icustomizer/)
+1. Télécharger et activer le plugin ou installer le depuis les extensions de votre administration de [WordPress](https://fr.wordpress.org/plugins/icustomizer/)
 2. Cliquer sur le menu "ICustomizer"
 3. Laissez vous guider par les options ;)	
 
