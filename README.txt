@@ -1,5 +1,3 @@
-
-
 === ICustomizer ===
 Contributors: INFORMATUX
 Tags: Admin, Dashboard, Custom CSS, Custom JS, Metas, Editor, Security
@@ -15,20 +13,20 @@ Personnalisation de votre administration et de votre site web
 == Description ==
 Plugins de personnalisation de votre administration et de votre site web.
 
-1. Gérez vos métas, paramètres, bar d\'admin et pied de page
-1. Personnaliser votre tableau de bord Admin
-1. Injecter du CSS dans votre administration / dans votre site web
-1. Injecter du CSS et du Javascript dans votre site web
-1. Personnaliser le comportement de vos éditeurs
-1. Personnaliser votre page de login
-1. Vérifiez les options de sécurité
+1. Gérez vos métas, paramètres, bar d'admin et pied de page
+2. Personnaliser votre tableau de bord Admin
+3. Injecter du CSS dans votre administration / dans votre site web
+4. Injecter du CSS et du Javascript dans votre site web
+5. Personnaliser le comportement de vos éditeurs
+6. Personnaliser votre page de login
+7. Vérifiez les options de sécurité
 
 [INFORMATUX](https://informatux.com/) / [Documentation](https://informatux.com/category/WORDPRESS).
 
 == Installation ==
 1. Télécharger et activer le plugin (ou installer le depuis la console admin de [WordPress](http://wordpress.org/)
-2. Cliquer sur le menu \"ICustomizer\"
-3. Laissez vous guider pour les options ;)	
+2. Cliquer sur le menu ICustomizer
+3. Laissez vous guider par les options ;-)	
 
 == Frequently Asked Questions ==
 = Pourquoi ? =
