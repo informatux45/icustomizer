@@ -1,75 +1,63 @@
 <?php
-/**
- * Runs on Uninstall of ICustomizer
- *
- * @package     ICustomizer
- * @author      INFORMATUX
- * @copyright   2017 INFORMATUX
- * @license     GPL-3.0+
- * @link      	https://informatux.com/category/WORDPRESS
- */
-
-// ------------------------------------------------
-// if uninstall.php is not called by WordPress, die
-// ------------------------------------------------
+/** if uninstall.php is not called by WordPress, die
+============================================= */
 if (!defined('WP_UNINSTALL_PLUGIN')) {
     die;
 }
-// ------------------------------------------------
 
-// -------------- 
-// Delete Options
-// --------------
-//$options =[
-//	'rhprint_text',
-//	'rhprint_icon',
-//	'rhprint_comments',
-//	'rhprint_message',
-//];
-// --------------
-//foreach ( $options as $option ) {
-//	if ( get_option( $option ) ) {
-//		delete_option( $option );
-//	}
-//}
-// --------------
+/** Delete Options
+============================================= */
+$options = [
+    // General
+    'icustomizer_wlwmanifest_link',
+    'icustomizer_wp_generator',
+    'icustomizer_wpml_generator',
+    'icustomizer_enable_all_settings',
+    'icustomizer_hide_connection_errors',
+    'icustomizer_remove_wp_adminbar',
+    'icustomizer_remove_logo_wp_adminbar',
+    'icustomizer_remove_comment_wp_adminbar',
+    'icustomizer_remove_new_content_wp_adminbar',
+    'icustomizer_remove_footer_admin',
+    'icustomizer_remove_footer_admin_txt',
+    'icustomizer_remove_footer_version_admin',
+    'icustomizer_remove_footer_version_admin_txt',
+    // Dashboard
+	'icustomizer_widget_non_admin_enable',
+	'icustomizer_widget_non_admin_title',
+	'icustomizer_widget_non_admin',
+	'icustomizer_widget_admin_enable',
+	'icustomizer_widget_admin_title',
+	'icustomizer_widget_admin',
+	'icustomizer_remove_widget_welcome_wp',
+	'icustomizer_remove_widget_news_wp',
+	'icustomizer_remove_widget_resume_wp',
+	'icustomizer_remove_widget_activity_wp',
+	'icustomizer_remove_widget_quick_wp',
+    // Custom CSS
+	'icustomizer_custom_css_admin',
+	'icustomizer_custom_css_front',
+    // Custom JS
+	'icustomizer_custom_js_front',
+    // Editor
+	'icustomizer_text_visual_default',
+	'icustomizer_remove_visual_editor',
+	'icustomizer_behavior_tag_p_editor',
+	'icustomizer_shortcode_in_excerpt',
+    // Login
+	'icustomizer_login_background',
+	'icustomizer_login_logo',
+	'icustomizer_login_logo_height',
+	'icustomizer_login_form_radius',
+	'icustomizer_login_form_bg_color',
+    'icustomizer_login_form_color',
+	'icustomizer_login_title_link',
+	'icustomizer_login_href_link'
+];
+foreach ( $options as $option ) {
+	if ( get_option( $option ) ) {
+		delete_option( $option );
+	}
+}
 
-// ------------
-// Delete Pages
-// ------------
-//wp_trash_post( 101 );
-// ------------
-
-// -----------------------------
-// Delete Custom Post Type posts
-// -----------------------------
-//$wpdb->query( "DELETE FROM {$wpdb->posts} WHERE post_type IN ( 'my_custom_post_type' );" );
-//$wpdb->query( "DELETE FROM {$wpdb->postmeta} meta LEFT JOIN {$wpdb->posts} posts ON posts.ID = meta.post_id WHERE wp.ID IS NULL;" );
-// -----------------------------
-
-// -----------------------------
-// for site options in Multisite
-// -----------------------------
-//delete_site_option($option_name);
-//if (is_multisite()) {
-//    global $wpdb;
-//    $blogs = $wpdb->get_results("SELECT blog_id FROM {$wpdb->blogs}", ARRAY_A);
-//
-//    if(!empty($blogs)) {
-//        foreach($blogs as $blog) {
-//	    switch_to_blog($blog['blog_id']);
-//            delete_option('option_name');
-//        }
-//    }
-//} else {
-//    delete_option('option_name');
-//}
-// -----------------------------
-
-// ----------------------------
-// drop a custom database table
-// ----------------------------
-//global $wpdb;
-//$wpdb->query("DROP TABLE IF EXISTS {$wpdb->prefix}mytable");
-// ----------------------------
 ?>

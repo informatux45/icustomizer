@@ -12,6 +12,9 @@
 .icustomizer-icons {
 	display: inline-block;
 }
+a.toplevel_page_icustomizer > div:nth-child(2) {
+	margin-top: -3px !important;
+}
 .icustomizer-icons-500 {
 	width: 528px;
 	height: 528px;
@@ -34,9 +37,15 @@
 .icustomizer-green {
 	color: green;
 }
-.icustomizer-credits {
+.icustomizer-yellow {
+	color: #e8b600;
+}
+.icustomizer-credits, .icustomizer-support {
 	float: left;
 	margin-right: 20px;
+}
+.icustomizer-bold {
+	font-weight: bold;
 }
 
 body.toplevel_page_icustomizer .titan-framework-panel-wrap .tf-heading th {
@@ -57,10 +66,111 @@ body.toplevel_page_icustomizer .titan-framework-panel-wrap .tf-heading th h3::be
 }
 body.toplevel_page_icustomizer .titan-framework-panel-wrap .nav-tab {
   border-radius: 10px 10px 0 0 !important;
-  margin-left: 0px !important;
+  margin-left: 5px !important;
 }
-body.toplevel_page_icustomizer div.wrap > h2 {
-  background: rgba(0, 0, 0, 0) url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIGZpbGw9IiNlNzRjM2MiID48cGF0aCBmaWxsPSIjNjA3RDhCIiBkPSJNMzkuNiwyNy4yYzAuMS0wLjcsMC4yLTEuNCwwLjItMi4ycy0wLjEtMS41LTAuMi0yLjJsNC41LTMuMmMwLjQtMC4zLDAuNi0wLjksMC4zLTEuNEw0MCwxMC44CWMtMC4zLTAuNS0wLjgtMC43LTEuMy0wLjRsLTUsMi4zYy0xLjItMC45LTIuNC0xLjYtMy44LTIuMmwtMC41LTUuNWMtMC4xLTAuNS0wLjUtMC45LTEtMC45aC04LjZjLTAuNSwwLTEsMC40LTEsMC45bC0wLjUsNS41CWMtMS40LDAuNi0yLjcsMS4zLTMuOCwyLjJsLTUtMi4zYy0wLjUtMC4yLTEuMSwwLTEuMywwLjRsLTQuMyw3LjRjLTAuMywwLjUtMC4xLDEuMSwwLjMsMS40bDQuNSwzLjJjLTAuMSwwLjctMC4yLDEuNC0wLjIsMi4yCXMwLjEsMS41LDAuMiwyLjJMNCwzMC40Yy0wLjQsMC4zLTAuNiwwLjktMC4zLDEuNEw4LDM5LjJjMC4zLDAuNSwwLjgsMC43LDEuMywwLjRsNS0yLjNjMS4yLDAuOSwyLjQsMS42LDMuOCwyLjJsMC41LDUuNQljMC4xLDAuNSwwLjUsMC45LDEsMC45aDguNmMwLjUsMCwxLTAuNCwxLTAuOWwwLjUtNS41YzEuNC0wLjYsMi43LTEuMywzLjgtMi4ybDUsMi4zYzAuNSwwLjIsMS4xLDAsMS4zLTAuNGw0LjMtNy40CWMwLjMtMC41LDAuMS0xLjEtMC4zLTEuNEwzOS42LDI3LjJ6IE0yNCwzNWMtNS41LDAtMTAtNC41LTEwLTEwYzAtNS41LDQuNS0xMCwxMC0xMGM1LjUsMCwxMCw0LjUsMTAsMTBDMzQsMzAuNSwyOS41LDM1LDI0LDM1eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiM0NTVBNjQiIGQ9Ik0yNCwxM2MtNi42LDAtMTIsNS40LTEyLDEyYzAsNi42LDUuNCwxMiwxMiwxMnMxMi01LjQsMTItMTJDMzYsMTguNCwzMC42LDEzLDI0LDEzeiBNMjQsMzAJYy0yLjgsMC01LTIuMi01LTVjMC0yLjgsMi4yLTUsNS01czUsMi4yLDUsNUMyOSwyNy44LDI2LjgsMzAsMjQsMzB6Ij48L3BhdGg+PC9zdmc+") no-repeat scroll 0% 50% / 15% auto;
+body.toplevel_page_icustomizer .titan-framework-panel-wrap .nav-tab:first-child {
+	display: none;	
+}
+
+h2 span#icustomizer-span-title {
+	background: rgba(0, 0, 0, 0) url("../images/icon-icustomizer.svg") no-repeat scroll 0% 20% / 13% auto;
+	display: inline-block;
+	padding: 0 0 10px 40px;
+	border-color: transparent;
+	font-size: 35px;
+	font-weight: 600;
+	margin: 0;
+	line-height: 1.3;
+}
+
+body.toplevel_page_icustomizer div.wrap > h2:first-child {
+	font-size: 30px;
+	line-height: 50px;
+}
+body.toplevel_page_icustomizer div.wrap > h2 #icustomizer-span-general {
+	display: none;
+}
+body.toplevel_page_icustomizer div.wrap > h2 #icustomizer-span-title {
+	text-transform: uppercase;
+}
+body.toplevel_page_icustomizer div.wrap > h2 #icustomizer-span-version {
+	font-size: 0.77em;
+}
+
+/* --- Credits --- */
+.informatux_gs_image {
+	max-width: 250px;
+}
+.informatux_outerdiv {
+  height: auto;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  position: relative;
+}
+.informatux_outer {
+  border: solid 1px lightgrey;
+  width: 250px;
   display: inline-block;
-  padding: 0 0 0 30px;
+  vertical-align: middle;
+  margin: 0 0.5em 1em 0;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.12);
+}
+.informatux_outer.informatux_last {
+  margin: 0 0 1em 0 !important;
+}
+.informatux_outer .informatux_centered {
+  background-color: skyblue;
+  color: white;
+  text-align: center;
+  margin-top: -4px;
+}
+.informatux_outer p {
+  font-size: 0.8em;
+  line-height: 1.2em;
+  padding: 0.2em 1em 1em 1em;
+  margin: 0;
+  text-align: center;
+}
+
+/* --- LOGIN Color Picker --- */
+input[id="icustomizer_icustomizer_login_form_bg_color"] {
+	display: block !important;
+}
+
+/* --- Menu administration --- */
+.wp-menu-name #icustomizer-span-version,
+.wp-menu-name #icustomizer-span-general,
+.wp-submenu .wp-first-item #icustomizer-span-title,
+.wp-submenu .wp-first-item #icustomizer-span-version
+{
+	display: none !important;
+}
+/* Menu hide instead of add "null" to $parent_slug in add_submenu_page */
+/* Allows to keep the menu opened */
+#toplevel_page_icustomizer ul li.wp-first-item {
+	display: none;
+}
+
+/* --- Start --- */
+.icustomizer-start {
+	line-height: 2em;
+}
+.icustomizer-start a.start-link {
+	text-decoration: none;
+}
+.icustomizer-start .dashicons, .dashicons-before::before {
+	line-height: unset;
+}
+
+a.start-link span.dashicons.dashicons-heart.icustomizer-red {
+	display: inline-block;
+	margin-top: 3px;
+}
+
+div span.dashicons.dashicons-star-filled.icustomizer-yellow {
+	display: inline-block;
+	margin-top: 2px;
 }
