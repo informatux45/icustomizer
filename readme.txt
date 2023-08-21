@@ -2,16 +2,16 @@
 Contributors: INFORMATUX
 Tags: Admin, Dashboard, Custom CSS, Custom JS, Metas, Editor, Security, Login
 Donate link: https://dev.informatux.com/
-Requires at least: 5.0
-Tested up to: 5.9
-Stable tag: 1.5.7
+Requires at least: 5.9
+Tested up to: 6.3
+Stable tag: 1.6.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.fr.html
 
 Personnalisation de votre administration et de votre site web
 
 == Description ==
-Plugin de personnalisation de votre administration et de votre site web.
+Plugins de personnalisation de votre administration et de votre site web.
 
 1. Gérez vos métas, paramètres, bar d'admin et pied de page
 1. Personnaliser votre tableau de bord Admin
@@ -44,6 +44,20 @@ Pourquoi pas ;-)
 9. icustomizer credits
 
 == Changelog ==
+= 1.6.3 =
+* Updated for Wordpress 6.3
+
+= 1.6.2 =
+* Updated for Wordpress 6.2
+
+= 1.6.1 =
+* Updated for Wordpress 6.1
+
+= 1.6.0 =
+* Updated for Wordpress 6.0
+* New CSS rule in Login form
+* Admin menu icon updated
+
 = 1.5.7 =
 * Updated for Wordpress 5.9
 * Delete message on Dashboard tab

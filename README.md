@@ -1,8 +1,8 @@
 # ICustomizer
 - Contributors: [DEV By INFORMATUX](https://dev.informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
-- Requires at least: 5.0
-- Tested up to: 5.9
-- Stable tag: 1.5.7
+- Requires at least: 5.9
+- Tested up to: 6.3
+- Stable tag: 1.6.3
 - License: [GPLv3](http://www.gnu.org/licenses/gpl-3.0.fr.html "Licence publique générale GNU v3")
 
 ###### Personnalisation de votre administration et de votre site web
@@ -50,6 +50,20 @@ Devenez un traducteur et envoyez nous vos traductions !
 3. Laissez vous guider par les options ;)	
 
 ### Changelog
+
+**1.6.3**
+- Updated for Wordpress 6.3
+
+**1.6.2**
+- Updated for Wordpress 6.2
+
+**1.6.1**
+- Updated for Wordpress 6.1
+
+**1.6.0**
+- Updated for Wordpress 6.0
+- New CSS rule in Login form
+- Admin menu icon updated
 
 **1.5.7**
 - Updated for Wordpress 5.9

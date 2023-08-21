@@ -227,7 +227,8 @@ if (!function_exists('icustomizer_custom_login_styles')) {
 			wp_add_inline_style( 'icustomizer-login-style', 'body.login div#login h1 a {background-image: url("' . esc_url( $icustomizer_logo ) .  '") !important;
 															 background-size: ' . get_option( 'icustomizer_login_logo_height' ) .  'px auto !important;
 															 height: ' . get_option( 'icustomizer_login_logo_height' ) .  'px !important;
-															 width: 100%;}'
+															 width: 100%;}
+															 #language-switcher {background-color: transparent !important}'
 			);
 		}
 
