@@ -238,7 +238,7 @@ if (!function_exists('icustomizer_custom_login_styles')) {
 		$icustomizer_login_form_bg     = get_option( 'icustomizer_login_form_bg_color' );
 		$icustomizer_login_form_color  = get_option( 'icustomizer_login_form_color' );
 		if ($icustomizer_login_form_radius > 0 || $icustomizer_login_form_bg != "#ffffff") {
-			wp_add_inline_style( 'icustomizer-login-style', '.login form {
+			wp_add_inline_style( 'icustomizer-login-style', '.login form#loginform {
 								border-radius: ' . $icustomizer_login_form_radius . 'px !important;
 								background-color: ' . $icustomizer_login_form_bg . ' !important;
 								color: ' . $icustomizer_login_form_color . ' !important;}

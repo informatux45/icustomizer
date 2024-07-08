@@ -1,8 +1,8 @@
 # ICustomizer
 - Contributors: [DEV By INFORMATUX](https://dev.informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
 - Requires at least: 5.9
-- Tested up to: 6.3
-- Stable tag: 1.6.3
+- Tested up to: 6.6
+- Stable tag: 1.6.6
 - License: [GPLv3](http://www.gnu.org/licenses/gpl-3.0.fr.html "Licence publique générale GNU v3")
 
 ###### Personnalisation de votre administration et de votre site web
@@ -50,6 +50,14 @@ Devenez un traducteur et envoyez nous vos traductions !
 3. Laissez vous guider par les options ;)	
 
 ### Changelog
+**1.6.6**
+- Updated for Wordpress 6.6
+
+**1.6.5**
+- Fixed background display (login form)
+
+**1.6.4**
+- Updated for Wordpress 6.4
 
 **1.6.3**
 - Updated for Wordpress 6.3
