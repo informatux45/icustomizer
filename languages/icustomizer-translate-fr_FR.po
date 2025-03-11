@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ICustomizer\n"
-"POT-Creation-Date: 2021-12-21 19:04+0100\n"
-"PO-Revision-Date: 2021-12-21 19:04+0100\n"
+"POT-Creation-Date: 2025-03-11 15:00+0100\n"
+"PO-Revision-Date: 2025-03-11 15:01+0100\n"
 "Last-Translator: \n"
 "Language-Team: INFORMATUX <informatux45@gmail.com>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -71,69 +71,34 @@ msgstr ""
 msgid "Documentation"
 msgstr "Documentation"
 
-#: includes/icustomizer-credits.php:19
-msgid "INFORMATUX contact"
-msgstr "Contacte INFORMATUX"
-
-#: includes/icustomizer-credits.php:40
+#: includes/icustomizer-credits.php:38
 msgid "CREDITS"
 msgstr "CREDITS"
 
-#: includes/icustomizer-credits.php:40
+#: includes/icustomizer-credits.php:38
 msgid "Developed and maintained by"
 msgstr "Développé et maintenu par"
 
-#: includes/icustomizer-credits.php:40
-msgid "Find all our developments on "
-msgstr "Retrouvez toutes nos développements sur "
+#: includes/icustomizer-credits.php:38
+msgid "Find all my developments on "
+msgstr "Retrouvez toutes mes développements sur "
 
-#: includes/icustomizer-credits.php:43
-msgid "It is also"
-msgstr "C'est aussi"
+#: includes/icustomizer-credits.php:42
+msgid "Better use the web, Ungooglized your Internet!"
+msgstr "Mieux utiliser le web, Dégooglisez votre Internet !"
 
-#: includes/icustomizer-credits.php:56
-msgid "SERVICES"
-msgstr "SERVICES"
+#: includes/icustomizer-credits.php:48 includes/icustomizer-credits.php:49
+#: includes/icustomizer-credits.php:50
+msgid "File Transfer / Deposit"
+msgstr "Dépôt / Transfert de fichiers"
 
-#: includes/icustomizer-credits.php:60
-msgid "SECURITY"
-msgstr "SÉCURITÉ"
+#: includes/icustomizer-credits.php:70
+msgid "Do you know the CHATONS?"
+msgstr "Connaissez-vous les CHATONS ?"
 
-#: includes/icustomizer-credits.php:62
-msgid "Tired of your WORDPRESS sites being attacked"
-msgstr "Marre que vos sites WORDPRESS soient attaqués"
-
-#: includes/icustomizer-credits.php:63
-msgid "Too complicated to put back"
-msgstr "Trop compliqué à remettre en place"
-
-#: includes/icustomizer-credits.php:74
-msgid "Wordpress Themes"
-msgstr "Thèmes Wordpress"
-
-#: includes/icustomizer-credits.php:75
-msgid "Web Hosting"
-msgstr "Hébergement"
-
-#: includes/icustomizer-credits.php:76
-msgid "Manage your WP sites by ANDROID / APPLE application"
-msgstr "Gérer vos sites WP par applications ANDROID / APPLE"
-
-#: includes/icustomizer-credits.php:83
-msgid "MAINTENANCE"
-msgstr "MAINTENANCE"
-
-#: includes/icustomizer-credits.php:85
-msgid "No time"
-msgstr "Pas le temps"
-
-#: includes/icustomizer-credits.php:86
-msgid "No envy"
-msgstr "Pas l'envie"
-
-#: includes/icustomizer-credits.php:87
-msgid "Too complicated"
-msgstr "Trop compliqué"
+#: includes/icustomizer-credits.php:80
+msgid "The anti-GAFAM collective"
+msgstr "Le collectif anti-GAFAM"
 
 #: includes/icustomizer-customcssbackend.php:53
 #: includes/icustomizer-customcsssite.php:53
@@ -158,7 +123,7 @@ msgstr "Sans les balises &lt;style&gt; et &lt;/style&gt;"
 
 #: includes/icustomizer-customcssbackend.php:70
 #: includes/icustomizer-customcsssite.php:70
-#: includes/icustomizer-customjs.php:70 includes/icustomizer-dashboard.php:222
+#: includes/icustomizer-customjs.php:70 includes/icustomizer-dashboard.php:215
 #: includes/icustomizer-editor.php:134 includes/icustomizer-general.php:275
 #: includes/icustomizer-login.php:172
 msgid "Save changes"
@@ -200,25 +165,16 @@ msgstr "Exemple d'utilisation avec JQUERY :"
 msgid "Create a non Admin Widget"
 msgstr "Créer un widget visible de tous"
 
-#: includes/icustomizer-dashboard.php:57 includes/icustomizer-editor.php:57
-#, php-format
-msgid ""
-"You are using WORDPRESS Version %s<br>If you wish to continue using the "
-"following settings, you will need to install the TinyMCE plugin."
-msgstr ""
-"Vous utilisez la version %s de WORDPRESS<br>Si vous souhaitez pouvoir "
-"continuer à utiliser l'éditeur, il vous faudra installer le plugin TinyMCE."
-
-#: includes/icustomizer-dashboard.php:62 includes/icustomizer-dashboard.php:108
+#: includes/icustomizer-dashboard.php:55 includes/icustomizer-dashboard.php:101
 msgid "Enable Widget"
 msgstr "Activer le widget"
 
-#: includes/icustomizer-dashboard.php:69 includes/icustomizer-dashboard.php:115
-#: includes/icustomizer-dashboard.php:161
-#: includes/icustomizer-dashboard.php:174
-#: includes/icustomizer-dashboard.php:187
-#: includes/icustomizer-dashboard.php:200
-#: includes/icustomizer-dashboard.php:213 includes/icustomizer-editor.php:94
+#: includes/icustomizer-dashboard.php:62 includes/icustomizer-dashboard.php:108
+#: includes/icustomizer-dashboard.php:154
+#: includes/icustomizer-dashboard.php:167
+#: includes/icustomizer-dashboard.php:180
+#: includes/icustomizer-dashboard.php:193
+#: includes/icustomizer-dashboard.php:206 includes/icustomizer-editor.php:94
 #: includes/icustomizer-editor.php:107 includes/icustomizer-editor.php:124
 #: includes/icustomizer-general.php:98 includes/icustomizer-general.php:111
 #: includes/icustomizer-general.php:124 includes/icustomizer-general.php:141
@@ -229,12 +185,12 @@ msgstr "Activer le widget"
 msgid "Enabled"
 msgstr "Activé"
 
-#: includes/icustomizer-dashboard.php:70 includes/icustomizer-dashboard.php:116
-#: includes/icustomizer-dashboard.php:162
-#: includes/icustomizer-dashboard.php:175
-#: includes/icustomizer-dashboard.php:188
-#: includes/icustomizer-dashboard.php:201
-#: includes/icustomizer-dashboard.php:214 includes/icustomizer-editor.php:95
+#: includes/icustomizer-dashboard.php:63 includes/icustomizer-dashboard.php:109
+#: includes/icustomizer-dashboard.php:155
+#: includes/icustomizer-dashboard.php:168
+#: includes/icustomizer-dashboard.php:181
+#: includes/icustomizer-dashboard.php:194
+#: includes/icustomizer-dashboard.php:207 includes/icustomizer-editor.php:95
 #: includes/icustomizer-editor.php:108 includes/icustomizer-editor.php:125
 #: includes/icustomizer-general.php:99 includes/icustomizer-general.php:112
 #: includes/icustomizer-general.php:125 includes/icustomizer-general.php:142
@@ -245,60 +201,68 @@ msgstr "Activé"
 msgid "Disabled"
 msgstr "Désactivé"
 
-#: includes/icustomizer-dashboard.php:71 includes/icustomizer-dashboard.php:117
-#: includes/icustomizer-dashboard.php:163
-#: includes/icustomizer-dashboard.php:176
-#: includes/icustomizer-dashboard.php:189
-#: includes/icustomizer-dashboard.php:202
-#: includes/icustomizer-dashboard.php:215 includes/icustomizer-general.php:100
+#: includes/icustomizer-dashboard.php:64 includes/icustomizer-dashboard.php:110
+#: includes/icustomizer-dashboard.php:156
+#: includes/icustomizer-dashboard.php:169
+#: includes/icustomizer-dashboard.php:182
+#: includes/icustomizer-dashboard.php:195
+#: includes/icustomizer-dashboard.php:208 includes/icustomizer-general.php:100
 #: includes/icustomizer-general.php:113 includes/icustomizer-general.php:126
 msgid "Default: disabled"
 msgstr "Défaut : Désactivé"
 
-#: includes/icustomizer-dashboard.php:76 includes/icustomizer-dashboard.php:122
+#: includes/icustomizer-dashboard.php:69 includes/icustomizer-dashboard.php:115
 msgid "Widget Title"
 msgstr "Titre du widget"
 
-#: includes/icustomizer-dashboard.php:89 includes/icustomizer-dashboard.php:135
+#: includes/icustomizer-dashboard.php:82 includes/icustomizer-dashboard.php:128
 msgid "Widget Text"
 msgstr "Texte du widget"
 
-#: includes/icustomizer-dashboard.php:100
-#: includes/icustomizer-dashboard.php:146
+#: includes/icustomizer-dashboard.php:93 includes/icustomizer-dashboard.php:139
 msgid "Put your footer content here"
 msgstr "Insérez votre contenu de pied de page ici"
 
-#: includes/icustomizer-dashboard.php:105
+#: includes/icustomizer-dashboard.php:98
 msgid "Create a Admin Widget Only"
 msgstr "Créer un widget visible uniquement des administrateurs"
 
-#: includes/icustomizer-dashboard.php:151
+#: includes/icustomizer-dashboard.php:144
 msgid "Enable / Disable Widgets Dashboard"
 msgstr "Activer / Désactiver les widgets du tableau de bord"
 
-#: includes/icustomizer-dashboard.php:154
+#: includes/icustomizer-dashboard.php:147
 msgid "Remove Widget Welcome WP"
 msgstr "Supprimer le widget Bienvenue de WP"
 
-#: includes/icustomizer-dashboard.php:167
+#: includes/icustomizer-dashboard.php:160
 msgid "Remove Widget News WP"
 msgstr "Supprimer le widget Nouvelles de WP"
 
-#: includes/icustomizer-dashboard.php:180
+#: includes/icustomizer-dashboard.php:173
 msgid "Remove Widget Resume WP"
 msgstr "Supprimer le widget D'un coup d'oeil de WP"
 
-#: includes/icustomizer-dashboard.php:193
+#: includes/icustomizer-dashboard.php:186
 msgid "Remove Widget Activity WP"
 msgstr "Supprimer le widget Activité de WP"
 
-#: includes/icustomizer-dashboard.php:206
+#: includes/icustomizer-dashboard.php:199
 msgid "Remove Widget Quick Press WP"
 msgstr "Supprimer le widget Brouillon rapide de WP"
 
 #: includes/icustomizer-editor.php:50
 msgid "Editor Behavior"
 msgstr "Comportement de l'éditeur"
+
+#: includes/icustomizer-editor.php:57
+#, php-format
+msgid ""
+"You are using WORDPRESS Version %s<br>If you wish to continue using the "
+"following settings, you will need to install the TinyMCE plugin."
+msgstr ""
+"Vous utilisez la version %s de WORDPRESS<br>Si vous souhaitez pouvoir "
+"continuer à utiliser l'éditeur, il vous faudra installer le plugin TinyMCE."
 
 #: includes/icustomizer-editor.php:73
 msgid "Product add method in product detail page"
@@ -600,6 +564,45 @@ msgstr ""
 msgid "Copy / Paste this code in your ROOT HTACCESS File"
 msgstr "Copier / Coller ce code dans votre fichier HTACCESS Racine"
 
+#~ msgid "INFORMATUX contact"
+#~ msgstr "Contacte INFORMATUX"
+
+#~ msgid "It is also"
+#~ msgstr "C'est aussi"
+
+#~ msgid "SERVICES"
+#~ msgstr "SERVICES"
+
+#~ msgid "SECURITY"
+#~ msgstr "SÉCURITÉ"
+
+#~ msgid "Tired of your WORDPRESS sites being attacked"
+#~ msgstr "Marre que vos sites WORDPRESS soient attaqués"
+
+#~ msgid "Too complicated to put back"
+#~ msgstr "Trop compliqué à remettre en place"
+
+#~ msgid "Wordpress Themes"
+#~ msgstr "Thèmes Wordpress"
+
+#~ msgid "Web Hosting"
+#~ msgstr "Hébergement"
+
+#~ msgid "Manage your WP sites by ANDROID / APPLE application"
+#~ msgstr "Gérer vos sites WP par applications ANDROID / APPLE"
+
+#~ msgid "MAINTENANCE"
+#~ msgstr "MAINTENANCE"
+
+#~ msgid "No time"
+#~ msgstr "Pas le temps"
+
+#~ msgid "No envy"
+#~ msgstr "Pas l'envie"
+
+#~ msgid "Too complicated"
+#~ msgstr "Trop compliqué"
+
 #~ msgid "Maximum image size of a list"
 #~ msgstr "Taille d'image maximale d'une liste"
 
@@ -783,15 +786,15 @@ msgstr "Copier / Coller ce code dans votre fichier HTACCESS Racine"
 #~ msgstr "Activer le plugin"
 
 #~ msgid ""
-#~ "There is a new version of %1$s available. %2$sView version %3$s details"
-#~ "%4$s."
+#~ "There is a new version of %1$s available. %2$sView version %3$s "
+#~ "details%4$s."
 #~ msgstr ""
 #~ "Il y a une nouvelle version %1$s disponible. %2$sVoir la version %3$s "
 #~ "détails%4$s."
 
 #~ msgid ""
-#~ "There is a new version of %1$s available. %2$sView version %3$s details"
-#~ "%4$s or %5$supdate now%6$s."
+#~ "There is a new version of %1$s available. %2$sView version %3$s "
+#~ "details%4$s or %5$supdate now%6$s."
 #~ msgstr ""
 #~ "Il y a une nouvelle version %1$s disponible. %2$sVoir les détails de la "
 #~ "version %3$s %4$s ou %5$smettez à jour maintenant%6$s."
@@ -891,13 +894,13 @@ msgstr "Copier / Coller ce code dans votre fichier HTACCESS Racine"
 #~ "vous avez effectuées. 'Annuler' pour arrêter, 'OK' pour mettre à jour."
 
 #~ msgid ""
-#~ "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox"
-#~ "\" title=\"%4s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update "
-#~ "now</a>."
+#~ "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" "
+#~ "class=\"thickbox\" title=\"%4s\">Check out what's new</a> or <a "
+#~ "href=\"%5$s\"%6$s>update now</a>."
 #~ msgstr ""
-#~ "<strong>%1$s %2$s</strong> est disponible. <a href=\"%3$s\" class="
-#~ "\"thickbox\" title=\"%4s\">Découvrez les nouveautés</a> ou <a href=\"%5$s"
-#~ "\"%6$s>mettez à jour maintenant</a>."
+#~ "<strong>%1$s %2$s</strong> est disponible. <a href=\"%3$s\" "
+#~ "class=\"thickbox\" title=\"%4s\">Découvrez les nouveautés</a> ou <a "
+#~ "href=\"%5$s\"%6$s>mettez à jour maintenant</a>."
 
 #~ msgid "Untitled %s"
 #~ msgstr "Sans titre %s"
