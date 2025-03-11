@@ -3,23 +3,23 @@
  * ICustomizer
  *
  * @package     			ICustomizer
- * @author      			DEV By INFORMATUX
- * @copyright   			2024 INFORMATUX
+ * @author      			INFORMATUX
+ * @copyright   			2025 INFORMATUX
  * @license     			GPL-3.0+
  *
  * @icustomizer
  * Plugin Name: 			ICustomizer
- * Plugin URI:  			https://dev.informatux.com/wordpress-icustomizer
+ * Plugin URI:  			https://github.com/informatux45/icustomizer
  * Description: 			Sécurité du front et personnalisation de votre administration sous Wordpress
- * Version:     			1.6.6
- * Author:      			DEV By INFORMATUX
- * Author URI:  			https://dev.informatux.com
+ * Version:     			1.7.0
+ * Author:      			INFORMATUX
+ * Author URI:  			https://informatux.com
  * Text Domain: 			icustomizer
  * Domain Path:				/languages
  * License:     			GPL-3.0+
  * License URI: 			http://www.gnu.org/licenses/gpl-3.0.txt
  * Requires at least:		5.9
- * Tested up to:			6.6
+ * Tested up to:			6.7
  * Requires PHP:			7.4
  *
  * ██╗███╗   ██╗███████╗ ██████╗ ██████╗ ███╗   ███╗ █████╗ ████████╗██╗   ██╗██╗  ██╗

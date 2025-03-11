@@ -3,11 +3,11 @@
 *               INFORMATUX Framework wordpress class (UTF8)                     *
 /** *****************************************************************************
 * @author     Patrice BOUTHIER                                                  *
-* @copyright  1996-2021 INFORMATUX                                              *
+* @copyright  1996-2025 INFORMATUX                                              *
 * @link       informatux.com                                                    *
-* @version    1.0.2                                                             *
+* @version    1.0.3                                                             *
 * ----------------------------------------------------------------------------- *
-* Copyright (c) 2021, INFORMATUX Solutions and web development                  *
+* Copyright (c) 2025, INFORMATUX Solutions and web development                  *
 * All rights reserved.                                                          *
 ***************************************************************************** **/
 
