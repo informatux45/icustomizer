@@ -1,8 +1,8 @@
 # ICustomizer
-- Contributors: [DEV By INFORMATUX](https://dev.informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
+- Contributors: [INFORMATUX](https://informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
 - Requires at least: 5.9
 - Tested up to: 6.6
-- Stable tag: 1.6.6
+- Stable tag: 1.7.0
 - License: [GPLv3](http://www.gnu.org/licenses/gpl-3.0.fr.html "Licence publique générale GNU v3")
 
 ###### Personnalisation de votre administration et de votre site web
@@ -31,10 +31,10 @@ __Plugin Capabilities__
 **Demandez nous pour signaler des bugs. C'est un bon moyen de faire progresser le plugin et d'en faire profiter la communauté !**
 
 ### WordPress requirement
-* WordPress 5.0+ (not tested on above versions, but may works)
+* WordPress 5.9+ (not tested on above versions, but may works)
 
 **Useful Resources**
-- Retrouvez nous sur notre site [DEV By INFORMATUX](https://dev.informatux.com/wordpress-icustomizer).
+- Retrouvez nous sur notre site [INFORMATUX](https://informatux.com).
 - Retrouvez la page officielle de ICUSTOMIZER sur [WordPress](https://fr.wordpress.org/plugins/icustomizer/)
 
 **Supported languages**
@@ -50,6 +50,10 @@ Devenez un traducteur et envoyez nous vos traductions !
 3. Laissez vous guider par les options ;)	
 
 ### Changelog
+**1.7.0**
+- Updated for Wordpress 6.7
+- Updated credits
+
 **1.6.6**
 - Updated for Wordpress 6.6
 
