@@ -1,7 +1,7 @@
 # ICustomizer
 - Contributors: [INFORMATUX](https://informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
 - Requires at least: 5.9
-- Tested up to: 6.6
+- Tested up to: 6.7
 - Stable tag: 1.7.0
 - License: [GPLv3](http://www.gnu.org/licenses/gpl-3.0.fr.html "Licence publique générale GNU v3")
 
