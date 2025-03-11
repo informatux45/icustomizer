@@ -11,7 +11,7 @@
  * Plugin Name: 			ICustomizer
  * Plugin URI:  			https://github.com/informatux45/icustomizer
  * Description: 			Sécurité du front et personnalisation de votre administration sous Wordpress
- * Version:     			1.7.0
+ * Version:     			1.7.1
  * Author:      			INFORMATUX
  * Author URI:  			https://informatux.com
  * Text Domain: 			icustomizer
@@ -115,7 +115,7 @@ if ( ! function_exists('icustomizer_plugin_row_meta') ) {
 	function icustomizer_plugin_row_meta( $links, $file ) {
 		if (strpos($file, ICUSTOMIZER_BASE) !== false) {
 			$new_links = array(
-                'doc' => '<a href="https://dev.informatux.com/wordpress-icustomizer" target="_blank"><span class="dashicons dashicons-book-alt"></span>' . __( 'Documentation', ICUSTOMIZER_ID_LANGUAGES ) . '</a>'
+                'doc' => '<a href="https://github.com/informatux45/icustomizer" target="_blank"><span class="dashicons dashicons-book-alt"></span>' . __( 'Documentation', ICUSTOMIZER_ID_LANGUAGES ) . '</a>'
 			);
 			
 			$links = array_merge($links, $new_links);

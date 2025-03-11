@@ -44,6 +44,9 @@ Pourquoi pas ;-)
 9. icustomizer credits
 
 == Changelog ==
+= 1.7.1 =
+* Updated doc link
+
 = 1.7.0 =
 * Updated for Wordpress 6.7
 * Updated credits
