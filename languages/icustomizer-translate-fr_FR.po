@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ICustomizer\n"
 "POT-Creation-Date: 2025-03-11 15:00+0100\n"
-"PO-Revision-Date: 2025-03-11 15:01+0100\n"
+"PO-Revision-Date: 2025-03-11 15:50+0100\n"
 "Last-Translator: \n"
 "Language-Team: INFORMATUX <informatux45@gmail.com>\n"
 "Language: fr\n"
@@ -81,7 +81,7 @@ msgstr "Développé et maintenu par"
 
 #: includes/icustomizer-credits.php:38
 msgid "Find all my developments on "
-msgstr "Retrouvez toutes mes développements sur "
+msgstr "Retrouvez tous mes développements sur "
 
 #: includes/icustomizer-credits.php:42
 msgid "Better use the web, Ungooglized your Internet!"
