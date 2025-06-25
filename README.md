@@ -1,8 +1,8 @@
 # ICustomizer
 - Contributors: [INFORMATUX](https://informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
 - Requires at least: 5.9
-- Tested up to: 6.7
-- Stable tag: 1.7.1
+- Tested up to: 6.8
+- Stable tag: 1.7.2
 - License: [GPLv3](http://www.gnu.org/licenses/gpl-3.0.fr.html "Licence publique générale GNU v3")
 
 ###### Personnalisation de votre administration et de votre site web
@@ -50,6 +50,9 @@ Devenez un traducteur et envoyez nous vos traductions !
 3. Laissez vous guider par les options ;)	
 
 ### Changelog
+**1.7.2**
+- Updated for Wordpress 6.8
+
 **1.7.1**
 - Updated doc link
 
