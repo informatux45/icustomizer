@@ -3,7 +3,7 @@
  * ICustomizer
  *
  * @package     			ICustomizer
- * @author      			INFORMATUX
+ * @author      			DEV By INFORMATUX
  * @copyright   			2025 INFORMATUX
  * @license     			GPL-3.0+
  *
@@ -12,8 +12,8 @@
  * Plugin URI:  			https://github.com/informatux45/icustomizer
  * Description: 			Sécurité du front et personnalisation de votre administration sous Wordpress
  * Version:     			1.7.3
- * Author:      			INFORMATUX
- * Author URI:  			https://informatux.com
+ * Author:      			DEV By INFORMATUX
+ * Author URI:  			https://dev.informatux.com
  * Text Domain: 			icustomizer
  * Domain Path:				/languages
  * License:     			GPL-3.0+

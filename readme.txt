@@ -1,5 +1,5 @@
 === ICustomizer ===
-Contributors: INFORMATUX
+Contributors: DEV By INFORMATUX
 Tags: Admin, Dashboard, Custom CSS, Custom JS, Metas, Editor, Security, Login
 Donate link: https://dev.informatux.com/
 Requires at least: 5.9

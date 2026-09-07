@@ -1,5 +1,5 @@
 # ICustomizer
-- Contributors: [INFORMATUX](https://informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
+- Contributors: [DEV By INFORMATUX](https://dev.informatux.com "Développement, PHP, HTML, CSS, JQUERY, Sécurité, Astuces, BricABrac, Ours Polaire...")
 - Requires at least: 5.9
 - Tested up to: 6.8
 - Stable tag: 1.7.3
@@ -34,7 +34,7 @@ __Plugin Capabilities__
 * WordPress 5.9+ (not tested on above versions, but may works)
 
 **Useful Resources**
-- Retrouvez nous sur notre site [INFORMATUX](https://informatux.com).
+- Retrouvez nous sur notre site [DEV By INFORMATUX](https://dev.informatux.com).
 - Retrouvez la page officielle de ICUSTOMIZER sur [WordPress](https://fr.wordpress.org/plugins/icustomizer/)
 
 **Supported languages**
