@@ -52,10 +52,13 @@ $options = [
 	'icustomizer_login_form_bg_color',
     'icustomizer_login_form_color',
 	'icustomizer_login_title_link',
-	'icustomizer_login_href_link'
+	'icustomizer_login_href_link',
+	// Suivi de version : ajoutée par icustomizer_install(), elle n'était pas
+	// listée ici et restait donc en base après désinstallation.
+	'icustomizer_version'
 ];
 foreach ( $options as $option ) {
-	if ( get_option( $option ) ) {
+	if ( get_option( $option ) !== false ) {
 		delete_option( $option );
 	}
 }

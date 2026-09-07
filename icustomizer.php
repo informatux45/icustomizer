@@ -14,12 +14,12 @@
  * Version:     			1.7.3
  * Author:      			DEV By INFORMATUX
  * Author URI:  			https://dev.informatux.com
- * Text Domain: 			icustomizer
+ * Text Domain: 			icustomizer-translate
  * Domain Path:				/languages
  * License:     			GPL-3.0+
  * License URI: 			http://www.gnu.org/licenses/gpl-3.0.txt
  * Requires at least:		5.9
- * Tested up to:			6.8
+ * Tested up to:			7.1
  * Requires PHP:			7.4
  *
  * ██╗███╗   ██╗███████╗ ██████╗ ██████╗ ███╗   ███╗ █████╗ ████████╗██╗   ██╗██╗  ██╗
@@ -40,6 +40,7 @@ defined('ABSPATH') or die('Are you crazy!');
 defined('ICUSTOMIZER_PATH') or define('ICUSTOMIZER_PATH', plugin_dir_path(__FILE__));
 defined('ICUSTOMIZER_URL') or define('ICUSTOMIZER_URL', plugin_dir_url(__FILE__));
 defined('ICUSTOMIZER_BASE') or define('ICUSTOMIZER_BASE', plugin_basename(__FILE__));
+defined('ICUSTOMIZER_FILE') or define('ICUSTOMIZER_FILE', __FILE__);
 defined('ICUSTOMIZER_NAME') or define('ICUSTOMIZER_NAME', 'ICUSTOMIZER');
 defined('ICUSTOMIZER_ID') or define('ICUSTOMIZER_ID', 'icustomizer');
 defined('ICUSTOMIZER_ID_LANGUAGES') or define('ICUSTOMIZER_ID_LANGUAGES', 'icustomizer-translate');
@@ -102,7 +103,9 @@ foreach ($icustomizerFiles as $icustomizerFile) {
 
 /** Create tab's plugin
 ============================================= */
-$icustomizerOptions = [ 'general', 'dashboard', 'customcssbackend', 'customcsssite', 'customjs', 'editor', 'login', 'pot', 'security', 'credits' ];
+// 'pot' figurait ici sans que includes/icustomizer-pot.php existe : reliquat
+// d'un copier-coller depuis ILIST, sans effet grâce au file_exists() plus bas.
+$icustomizerOptions = [ 'general', 'dashboard', 'customcssbackend', 'customcsssite', 'customjs', 'editor', 'login', 'security', 'credits' ];
 foreach ($icustomizerOptions as $icustomizerOption) {
 	$icustomizerOptionFile = ICUSTOMIZER_PATH . 'includes/' . ICUSTOMIZER_ID . '-' . $icustomizerOption . '.php';
 	if (file_exists($icustomizerOptionFile)) require_once($icustomizerOptionFile);

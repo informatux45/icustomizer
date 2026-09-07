@@ -12,7 +12,11 @@ $icustomizer_version = icustomizer_get_version(); // Change version of the plugi
 * Install the plugin DB
 * @return DB Insert/Upgrade
 */
-register_activation_hook( __FILE__, 'icustomizer_install' );
+// register_activation_hook() attend le fichier PRINCIPAL du plugin :
+// WordPress déclenche 'activate_icustomizer/icustomizer.php'. Passer
+// __FILE__ depuis ce fichier INCLUS donnait
+// 'activate_icustomizer/icustomizer-system.php' - un hook jamais joué.
+register_activation_hook( ICUSTOMIZER_FILE, 'icustomizer_install' );
 if ( !function_exists('icustomizer_install') ) {
 	function icustomizer_install() {
 		global $icustomizer_version;
@@ -105,8 +109,14 @@ add_action('plugins_loaded', 'icustomizer_update_check');
 if ( ! function_exists("icustomizer_update_check") ) {
 	function icustomizer_update_check(){
 		global $icustomizer_version;
-		$icustomizer_version = get_site_option('icustomizer_version');
-		if ($icustomizer_version != $icustomizer_version) {
+		// La version lue en base écrasait la globale AVANT la comparaison :
+		// le test comparait donc la variable à elle-même et valait toujours
+		// false. Combiné au hook d'activation ci-dessus qui n'était jamais
+		// joué, icustomizer_install() n'était appelée nulle part - les options
+		// du plugin n'étaient jamais créées (elles n'apparaissaient en base
+		// qu'au premier enregistrement d'un formulaire).
+		$icustomizer_installed_version = get_option( 'icustomizer_version' );
+		if ( $icustomizer_installed_version !== $icustomizer_version ) {
 			icustomizer_install();
 		}
 	}
