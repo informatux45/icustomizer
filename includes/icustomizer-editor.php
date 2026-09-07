@@ -163,7 +163,10 @@ if (!function_exists("icustomizer_text_visual_default_function")) {
 /** Remove Visual from Editor 
 =================================================== */
 if ( get_option( 'icustomizer_remove_visual_editor' ) )
-	add_filter ( 'user_can_richedit' , create_function ( '$a' , 'return false;' ) , 50 );
+	// create_function() est SUPPRIMÉE depuis PHP 8.0 : activer cette option
+	// provoquait une erreur fatale. __return_false est la fonction fournie
+	// par WordPress pour exactement ce cas.
+	add_filter( 'user_can_richedit', '__return_false', 50 );
 
 /** Change "p" tag to "br" tag into Editor 
 =================================================== */

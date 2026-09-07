@@ -19,7 +19,13 @@ defined('ABSPATH') or die('Are you crazy!');
 if (!class_exists("icustomizer_framework")) {
 	
 	class icustomizer_framework {
-	
+
+		// Affectées dans le constructeur. Déclarées explicitement : depuis
+		// PHP 8.2 la création d'une propriété non déclarée émet une
+		// dépréciation, et deviendra une erreur en PHP 9.
+		private $plugin_id;
+		private $errors;
+
 		/**
 		* Class form's attributes
 		* private properties
@@ -1636,10 +1642,11 @@ if (!class_exists("icustomizer_framework")) {
 		* @return string
 		**/
 		function addSlashes($text) {
-			if (!get_magic_quotes_gpc()) {
-				$text = addslashes($text);
-			}
-			return $text;
+			// get_magic_quotes_gpc() est SUPPRIMÉE depuis PHP 8.0 et n'était ici
+			// protégée par aucun garde : tout appel aurait été fatal. La méthode
+			// n'est appelée nulle part, mais le piège restait armé. Les magic
+			// quotes ayant disparu en PHP 5.4, il faut toujours échapper.
+			return addslashes($text);
 		}
 	
 	
@@ -1649,10 +1656,10 @@ if (!class_exists("icustomizer_framework")) {
 		* @return string
 		*/
 		function stripSlashesGPC($text) {
-			if ( version_compare( phpversion(), "7.4.0", ">=" ) ) return $text;
-			if ( !function_exists("get_magic_quotes_gpc") ) return $text;
-			if ( get_magic_quotes_gpc() ) $text = stripslashes($text);
-
+			// Les magic quotes ont disparu en PHP 5.4 et get_magic_quotes_gpc()
+			// est supprimée depuis PHP 8.0. Le plugin exige PHP 7.4+ : cette
+			// méthode était déjà un simple passe-plat (elle retournait $text dès
+			// la première ligne), les branches restantes étaient mortes.
 			return $text;
 		}
 		

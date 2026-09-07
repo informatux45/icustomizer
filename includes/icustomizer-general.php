@@ -313,15 +313,12 @@ if ( get_option( 'icustomizer_wpml_generator' )) {
 /** Custom Admin footer (Left)
 =================================================== */
 if ( get_option( 'icustomizer_remove_footer_admin' )) {
-	add_filter('admin_footer_text', 'icustomizer_remove_footer_admin_function');
+	// Priorité 999 pour passer après le texte par défaut de WordPress.
+	add_filter( 'admin_footer_text', 'icustomizer_remove_footer_admin_function', 999 );
 	function icustomizer_remove_footer_admin_function() {
-		echo ' ' . html_entity_decode(get_option( 'icustomizer_remove_footer_admin_txt' )) . ' ';
+		// Une callback de filtre doit RETOURNER la valeur, pas l'afficher.
+		return ' ' . html_entity_decode( get_option( 'icustomizer_remove_footer_admin_txt' ) ) . ' ';
 	}
-}
-if (PHP_VERSION_ID < 70200) {
-	add_filter( 'admin_footer_text', create_function('', 'return;'), 999);
-} else {
-	add_filter( 'admin_footer_text', function() {return;}, 999);
 }
 
 /** Custom Admin WP Version footer (Right)
@@ -329,7 +326,8 @@ if (PHP_VERSION_ID < 70200) {
 if ( get_option( 'icustomizer_remove_footer_version_admin' )) {
 	add_filter( 'update_footer', 'icustomizer_admin_version_footer_function', 11 );
 	function icustomizer_admin_version_footer_function() {
-		echo get_option( 'icustomizer_remove_footer_version_admin_txt' );
+		// Une callback de filtre doit RETOURNER la valeur, pas l'afficher.
+		return get_option( 'icustomizer_remove_footer_version_admin_txt' );
 	}
 }
 
@@ -389,10 +387,10 @@ if ( get_option( 'icustomizer_enable_all_settings' )) {
 
 /** Hide connection errors
 =================================================== */
-if (PHP_VERSION_ID < 70200) {
-	if ( get_option( 'icustomizer_hide_connection_errors' )) add_filter('login_errors', create_function('$a', "return null;"));
-} else {
-	if ( get_option( 'icustomizer_hide_connection_errors' )) add_filter( 'login_errors', function() {return;});
+// La branche PHP < 7.2 utilisait create_function(), supprimée depuis PHP 8.0.
+// Le plugin exige PHP 7.4 : cette branche était morte, elle est retirée.
+if ( get_option( 'icustomizer_hide_connection_errors' )) {
+	add_filter( 'login_errors', '__return_empty_string' );
 }
 
 ?>
