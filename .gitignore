@@ -1,0 +1,8 @@
+# Fichiers d'environnement / OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Logs et fichiers generes a l'execution
+*.log

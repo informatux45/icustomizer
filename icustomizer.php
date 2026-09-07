@@ -11,7 +11,7 @@
  * Plugin Name: 			ICustomizer
  * Plugin URI:  			https://github.com/informatux45/icustomizer
  * Description: 			Sécurité du front et personnalisation de votre administration sous Wordpress
- * Version:     			1.7.2
+ * Version:     			1.7.3
  * Author:      			INFORMATUX
  * Author URI:  			https://informatux.com
  * Text Domain: 			icustomizer

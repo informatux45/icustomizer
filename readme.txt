@@ -4,7 +4,7 @@ Tags: Admin, Dashboard, Custom CSS, Custom JS, Metas, Editor, Security, Login
 Donate link: https://dev.informatux.com/
 Requires at least: 5.9
 Tested up to: 6.8
-Stable tag: 1.7.2
+Stable tag: 1.7.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.fr.html
 
@@ -44,6 +44,9 @@ Pourquoi pas ;-)
 9. icustomizer credits
 
 == Changelog ==
+= 1.7.3 =
+* Add wordfence file
+
 = 1.7.2 =
 * Updated for Wordpress 6.8
 
